@@ -29,12 +29,12 @@ class LoginScreen extends StatelessWidget {
                   "Hello, welcome back to account!",
                   style: GoogleFonts.mPlus1(fontSize: 15),
                 ),
-                trailing: Column(
+                trailing: const Column(
                   children: [
                     SizedBox(
                       height: 12,
                     ),
-                    const Row(
+                    Row(
                       // crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -55,7 +55,7 @@ class LoginScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
@@ -100,7 +100,7 @@ class LoginScreen extends StatelessWidget {
                                   spreadRadius: 1,
                                   blurRadius: 50,
                                   color: Colors.black.withOpacity(0.3),
-                                  offset: Offset(0, 0))
+                                  offset: const Offset(0, 0))
                             ],
                             borderRadius: BorderRadius.circular(20)),
                         child: Center(
@@ -117,7 +117,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Text(
@@ -127,7 +127,7 @@ class LoginScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               SizedBox(
@@ -140,41 +140,41 @@ class LoginScreen extends StatelessWidget {
                   cursorColor: Colors.black,
                   style: GoogleFonts.mPlus1(fontWeight: FontWeight.w500),
                   decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(10),
+                    contentPadding: const EdgeInsets.all(10),
                     prefixIcon: Row(
                       // mainAxisAlignment: MainAxisAlignment.center,
                       // crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 12,
                           backgroundImage: NetworkImage(
                               "https://patrickcoombe.com/wp-content/uploads/2015/05/americanFlag2019aPNG-1.png"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 1,
                         ),
-                        Icon(
+                        const Icon(
                           UniconsSolid.angle_down,
                           color: Colors.black,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
                         Container(
                           color: Colors.grey,
                           width: 0.5,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         )
                       ],
                     ),
-                    suffixIcon: Padding(
-                      padding: const EdgeInsets.all(15.0),
+                    suffixIcon: const Padding(
+                      padding: EdgeInsets.all(15.0),
                       child: CircleAvatar(
                         // radius: 10,
                         maxRadius: 1,
@@ -187,17 +187,19 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 0.5),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 0.5),
                       borderRadius: BorderRadius.circular(26),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 0.5),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 0.5),
                       borderRadius: BorderRadius.circular(26),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               SizedBox(
@@ -205,10 +207,10 @@ class LoginScreen extends StatelessWidget {
                 child: OutlinedButton(
                   onPressed: () {},
                   style: OutlinedButton.styleFrom(
-                      backgroundColor: Color(0xff32357C),
+                      backgroundColor: const Color(0xff32357C),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(26)),
-                      fixedSize: Size(double.maxFinite, 50)),
+                      fixedSize: const Size(double.maxFinite, 50)),
                   child: Text(
                     "Send Code",
                     style: GoogleFonts.mPlus1(
@@ -218,7 +220,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Row(
@@ -240,7 +242,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -250,7 +252,7 @@ class LoginScreen extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(26)),
-                        fixedSize: Size(double.maxFinite, 50)),
+                        fixedSize: const Size(double.maxFinite, 50)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -259,7 +261,7 @@ class LoginScreen extends StatelessWidget {
                           height: 24,
                           width: 24,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(
@@ -272,7 +274,7 @@ class LoginScreen extends StatelessWidget {
                       ],
                     )),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -282,7 +284,7 @@ class LoginScreen extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(26)),
-                        fixedSize: Size(double.maxFinite, 50)),
+                        fixedSize: const Size(double.maxFinite, 50)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -291,7 +293,7 @@ class LoginScreen extends StatelessWidget {
                           height: 24,
                           width: 24,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(
@@ -304,7 +306,7 @@ class LoginScreen extends StatelessWidget {
                       ],
                     )),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Row(
@@ -314,7 +316,7 @@ class LoginScreen extends StatelessWidget {
                     "Don't have an account?",
                     style: GoogleFonts.mPlus1(color: Colors.grey),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Text(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uichallenge/home_page.dart';
 import 'package:uichallenge/login_screen.dart';
+import 'package:uichallenge/verfication_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: VerficationScreen(),
     );
   }
 }
